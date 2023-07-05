@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+            border: 2px solid;
+        }
+
+        .bat {
+            margin-top: 100px;
+            transition: transform .3s ease-in .7;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top;
+
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            border-radius: 50px;
+            position: relative;
+            left: 533px;
+            bottom: 215px;
+            transition: transform .5s ease-out;
+
+        }
+
+        .field:hover .ball {
+            transform: translate(600px, -100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat" src="Bat.png" alt="">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>
